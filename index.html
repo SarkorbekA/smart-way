@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="category_burger">
+        <div class="ctg_burger_con">
+            <div class="burger_top">
+                <div class="burger_back" onclick="burger_back()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            <h1 class="ctg_title">Категории</h1>
+            <div class="ctg_list">
+                <h2 class="ctg_branch"><a href="#">Электроника</a></h2>
+                    <p class="ctg_sub_branch"><a href="#">Телефоны</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Компьютеры</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Игры и игровые приставки</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Камеры</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Техника для дома</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Техника для кухни</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Тв / видеотехника</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Аудиотехника</a></p>
+                <h2 class="ctg_branch"><a href="#">Транспорт</a></h2>
+                    <p class="ctg_sub_branch"><a href="#">Легковые автомобили</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Автозапчасти и аксессуары</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Грузовые автомобили</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Шины, диски и колёса</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Мото</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Прицепы</a></p>
+                <h2 class="ctg_branch"><a href="#">Мода и стиль</a></h2>
+                    <p class="ctg_sub_branch"><a href="#">Одежда/обувь</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Аксессуары</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Красота / здоровье</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Наручные часы</a></p>
+                <h2 class="ctg_branch"><a href="#">Детский мир</a></h2>
+                    <p class="ctg_sub_branch"><a href="#">Детская одежда</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Детская мебель</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Товары для школьников</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Детская обувь</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Игрушки</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Детские коляски</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Детский транспорт</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Прочие детские товары</a></p>
+                <h2 class="ctg_branch"><a href="#">Недвижимость</a></h2>
+                    <p class="ctg_sub_branch"><a href="#">Посуточная аренда</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Квартиры</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Дома</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Земля</a></p>
+                    <p class="ctg_sub_branch"><a href="#">Коммерческие помещения</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="buy_scene">
+        <div class="reg_con">
+            <form  method="post" action="">
+                <div class="container">
+                    <div class="reg_top">
+                        <h1 class="reg_title">Регистрация</h1>
+                        <a class="reg_back" href="#" onclick="reg_back()">
+                            <i class="fa-solid fa-xmark"></i>
+                        </a>
+                    </div>
+                    <hr>
+                
+                    <label for="name"><p class="reg_sub_title">Имя фамилия</p></label>
+                    <input type="text" placeholder="Имя фамилия" name="email" id="email" required>
+                
+                    <label for="tel"><p class="reg_sub_title">Номер для связи</p></label>
+                    <input type="tel" placeholder="Введите номер телефона" name="tel" id="tel" required>
+                
+                    <label for="address"><p class="reg_sub_title">Адресс</p></label>
+                    <input type="text" placeholder="Введите точный адресс" name="address" id="address">
+                    <hr>
+
+                    <button type="submit" class="registerbtn">Готово</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <header>
+        <div class="header_con">
+            <a href="#" class="logo">
+                <div class="logo_div">smart-way</div>
+            </a>
+    
+            <form class="search_bar" method="post" action="/?do=search">        
+                <input class="intup_search" type="hidden" name="do" value="Поиск">
+                <input class="intup_search" type="hidden" name="subaction" value="Поиск">
+                <input class="intup_search" name="story" type="search" id="search" placeholder="Поиск...">
+                <button class="button_search" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+
+            <form class="regions" action="/action_page.php">
+                <select name="regions_s" id="regions_s">
+                    <option value="Ташкент">Ташкент</option>
+                    <option value="Ташкент обл.">Ташкент обл.</option>
+                    <option value="Андижан">Андижан</option>
+                    <option value="Бухара">Бухара</option>
+                    <option value="Джизак">Джизак</option>
+                    <option value="Карши">Карши</option>
+                    <option value="Навои">Навои</option>
+                    <option value="Наманган">Наманган</option>
+                    <option value="Самарканд">Самарканд</option>
+                    <option value="Гулистан">Гулистан</option>
+                    <option value="Фергана">Фергана</option>
+                    <option value="Ургенч">Ургенч</option>
+                </select>
+            </form>
+
+            <a title="Категории" class="header_ctg" href="#" onclick="burger()">
+                <i class="fa-solid fa-list"></i>
+            </a>
+
+            
+        </div>
+    </header>
+    <main>
+
+        <div class="left_side">
+            
+            <div class="main_list_block" id="main_list_block">
+                <div class="recommended">
+                    <h1 class="rec_title">Рекомендуемые</h1>
+                    <div class="grid-container">
+                            
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover2.webp);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover2.webp);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover2.webp);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover2.webp);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+                <hr>
+                <div class="recommended">
+                    <h1 class="rec_title">Свежие товары</h1>
+                    <div class="grid-container">
+                            
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover1.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-item">
+                            <a class="case_link" href="#">
+                                <div style="background-image: url(/images/cover.jpg);" class="cover"></div>
+                                <p class="rec_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                                <div class="rec_lowercase">
+                                    <div class="rec_price">321.312 сум</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+    
+                    <ul class="pagination">
+                        <li><a class="active" href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><a href="#">9</a></li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+
+            <div class="more_info_block" id="more_info_block">
+                <div class="more_back">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+                <h1 class="more_title">Мои заказы</h1>
+
+                <div class="more_cover_con">
+                    <div class="more_skip" id="left">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </a>
+                    </div>
+                    <p class="length">3</p>
+                    <div class="more_slider">
+                        <div class="more_cover" id="more_cover" style="background-image: url(/images/cover2.webp);"></div>
+                        <div class="more_cover"  style="background-image: url(/images/cover.jpg);"></div>
+                        <div class="more_cover" style="background-image: url(/images/cover1.jpg);"></div>
+                    </div>
+                    <div class="more_skip" id="right">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="more_info">
+                    
+                    <p class="more_sub_title">Lenovo IdeaPad Gaming 3 15ACH6</p>
+                    <p class="more_price">321.312 сум</p>
+
+                    <div class="inf_container">
+                        <div class="info bg">
+                            <p class="place_holder">Категория:</p>
+                            <a class="variable_info" href="#">Мобильные устройства</a>
+                        </div>
+                        <div class="info">
+                            <p class="place_holder">Цена:</p>
+                            <p class="variable_info">321.312 сум</p>
+                        </div>
+                        <div class="info bg">
+                            <p class="place_holder">Место сдачи:</p>
+                            <p class="variable_info">Ташкент, Самарканд</p>
+                        </div>
+                        <div class="info">
+                            <p class="place_holder">Есть бесплатная доставка:</p>
+                            <p class="variable_info">Нет</p>
+                        </div>
+                        <div class="info bg">
+                            <p class="place_holder">Кол. ограничено:</p>
+                            <p class="variable_info">Да</p>
+                        </div>
+                    </div>
+
+                    <div class="description">
+                        <p class="des_title">Описание</p>
+                        <p class="des">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis sunt aperiam maxime odio deserunt? Optio quisquam in quasi officia magnam rerum placeat doloremque. Fugiat reiciendis ut ea, sunt dolore alias.</p>
+                    </div>
+
+                </div>
+
+                <div class="buy_btn">
+                    <a href="#" onclick="buy()">Купить</a>
+                </div>
+
+                
+            </div>
+
+
+
+            <div class="instruction">
+                <h2 class="inst_title">Как пользоваться сайтом?</h2>
+                <p class="inst_p">Smart-way — многофункциональный сервис поиска товаров в интернет-магазинах.
+                    Что-бы купить любой товар вы должны ввести адресс и номер телефона и мы позвоним вам уточнить некоторые детали. Теперь что бы купить товар не обязательно выходить из дома
+                </p>
+            </div>
+
+            <footer>
+                <div class="footer_section">
+                    <h2>Права</h2>
+                    <a href="#">Cоглашение</a>
+                    <a href="#">Политика</a>
+                    <a href="#">Copyright</a>
+                </div>
+                <div class="footer_section">
+                    <h2>Контакты</h2>
+                    <a href="#"><i class="fa-solid fa-location-dot"></i> Узбекистан, Ташент</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> +998 xx xxx xx xx</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> +998 xx xxx xx xx</a>
+                </div>
+                <div class="footer_section">
+                    <h2 style="text-align:center;">Мы в соцсетях</h2>
+                    <div class="socials">
+                        <a class="social_net" href="#">
+                            <i title="mail" style="color: #2a3f50;" class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a class="social_net" href="#">
+                            <i title="twitter" style="color: #1d9bf0;" class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a class="social_net" href="#">
+                            <i title="linkedin" style="color: #0a66c1;" class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="social_net" href="#">
+                            <i title="facebook" style="color:#3c5a99;" class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a class="social_net" href="#">
+                            <i title="telegram" style="color: #2098ca;" class="fa-brands fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+            
+        </div>
+
+        <div class="right_side">
+            <div class="ctg_con">
+                <h1 class="ctg_title">Категории</h1>
+                <div class="ctg_list">
+                    <h2 class="ctg_branch"><a href="#">Электроника</a></h2>
+                        <p class="ctg_sub_branch"><a href="#">Телефоны</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Компьютеры</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Игры и игровые приставки</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Камеры</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Техника для дома</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Техника для кухни</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Тв / видеотехника</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Аудиотехника</a></p>
+                    <h2 class="ctg_branch"><a href="#">Транспорт</a></h2>
+                        <p class="ctg_sub_branch"><a href="#">Легковые автомобили</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Автозапчасти и аксессуары</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Грузовые автомобили</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Шины, диски и колёса</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Мото</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Прицепы</a></p>
+                    <h2 class="ctg_branch"><a href="#">Мода и стиль</a></h2>
+                        <p class="ctg_sub_branch"><a href="#">Одежда/обувь</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Аксессуары</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Красота / здоровье</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Наручные часы</a></p>
+                    <h2 class="ctg_branch"><a href="#">Детский мир</a></h2>
+                        <p class="ctg_sub_branch"><a href="#">Детская одежда</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Детская мебель</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Товары для школьников</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Детская обувь</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Игрушки</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Детские коляски</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Детский транспорт</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Прочие детские товары</a></p>
+                    <h2 class="ctg_branch"><a href="#">Недвижимость</a></h2>
+                        <p class="ctg_sub_branch"><a href="#">Посуточная аренда</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Квартиры</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Дома</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Земля</a></p>
+                        <p class="ctg_sub_branch"><a href="#">Коммерческие помещения</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
